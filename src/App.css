@@ -1,0 +1,20 @@
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-360 {
+  transition: transform 0.7s;
+}
+
+.hover\:rotate-360:hover {
+  transform: rotate(360deg);
+}
+body {
+  background: linear-gradient(135deg, #6b5b95 50%, #cd3ecd 50%);
+  min-height: 100vh; /* Ensures the gradient covers the entire height */
+}
